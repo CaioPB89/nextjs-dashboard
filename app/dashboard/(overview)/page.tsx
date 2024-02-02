@@ -12,9 +12,11 @@ import CardWrapper from '@/app/ui/dashboard/cards';
 
 // Em uma questão de carregar paginas, é dificil saber a resposta correta. Carregar ela inteira gera problemas caso informações demorem. Fazer uma stream 
 // para cada componente pode levar a tela poppando ao usuário. Usando wraps para carregar pedaços da página necessita da criação dos wrappers
-// Suspense faz com que a o que ele está em volta só seja renderizado caso uma condição seja feita (exemplo, carregar dados). 
+
+// Suspense faz com que o que ele está em volta só seja renderizado caso uma condição seja feita (exemplo, carregar dados). 
 // Ele tambem permite o uso de fallback para carregar algo no meio tempo
 
+// Existe tambem renderiazação parcial, onde alguns elementos são estaticos e outros, dinâmicos
 export default async function Page() {
   // const revenue = await fetchRevenue();
 // fetchLatestInvoices()

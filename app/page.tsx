@@ -1,6 +1,6 @@
 // Foi-se feito uma conexão com o site da Verse e foi conectado um BD PostGre para uso no projeto.
 // Será trabalhado o sistema de query destas informações.
-// Server components fazem conexões diretas ao database;
+// Server components podem fazer conexões diretas ao database;
 import AcmeLogo from '@/app/ui/acme-logo';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';

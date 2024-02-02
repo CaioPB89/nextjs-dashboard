@@ -91,6 +91,7 @@ export default async function InvoicesTable({
                         width={28}
                         height={28}
                         alt={`${invoice.name}'s profile picture`}
+                        // Lint faz a checagem da falta de certos fatores na aplicação
                       />
                       <p>{invoice.name}</p>
                     </div>

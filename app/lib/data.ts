@@ -9,7 +9,7 @@ import {
   Revenue,
 } from './definitions';
 import { formatCurrency } from './utils';
-import { unstable_noStore as noStore } from 'next/cache'; // Para adicionar renderização dinâmica
+import { unstable_noStore as noStore } from 'next/cache'; // Para adicionar renderização dinâmica. Proibe cache de dados, fazendo com que seja necessario pegar as informações sempre
 
 export async function fetchRevenue() {
   // Add noStore() here to prevent the response from being cached.
@@ -168,7 +168,7 @@ export async function fetchInvoiceById(id: string) {
       // Convert amount from cents to dollars
       amount: invoice.amount / 100,
     }));
-
+    console.log(invoice);
     return invoice[0];
   } catch (error) {
     console.error('Database Error:', error);

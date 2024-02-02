@@ -25,7 +25,7 @@ const links = [
 ];
 
 export default function NavLinks() {
-  const pathName = usePathname(); // Retorna caminho do path do usuario
+  const pathName = usePathname(); // Retorna caminho do path do usuario ao clicar na opção
   return (
     <>
       {links.map((link) => {
